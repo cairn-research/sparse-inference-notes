@@ -1,6 +1,6 @@
 # sparse-inference-notes
 
-Research notes on sparse inference techniques and quantization for large-scale neural networks. Work conducted 2023–2024.‌‍‍‌‍‍‍‌‌‍‍‌‍‍‍‍‌‍‍‍‌‍‌‌‌‌‍‌‌‌‌‌‌‍‍‌‌‌‌‍‌‍‍‌‍‍‌‌‌‍‍‌‍‍‌‌‌‌‍‌‌‌‌‌‌‍‍‍‌‍‍‍‌‍‍‌‌‍‌‍‌‍‍‌‍‌‌‍‌‍‍‌‌‍‍‍‌‍‍‌‍‌‌‌‌‍‍‍‌‍‌‌‌‍‍‍‌‌‍‍‌‌‍‌‌‌‌‌‌‍‍‍‌‍‍‍‌‍‍‌‌‍‌‍‌‍‍‍‌‌‍‌‌‍‍‌‌‍‌‍‌‌‍‌‌‌‌‌‌‍‍‌‌‍‌‌‌‍‍‌‌‍‌‍‌‍‍‌‍‍‌‌‌‍‍‌‌‍‌‍‌‍‍‍‌‍‌‌‌‍‍‌‌‍‌‍‌‍‍‌‌‍‌‌
+Research notes on sparse inference techniques and quantization for large-scale neural networks. Work conducted 2023–2024.
 
 ## Overview
 
@@ -21,6 +21,12 @@ The work here is incomplete. Some threads were not followed to their conclusions
 **On quantization overhead:** Standard vector quantization introduces 1–2 bits of overhead per block. With careful rotation-based approaches, this overhead approaches zero. See `/notes/quantization-ceiling.md`.
 
 **On compression limits:** Theoretical lower bounds on model compression remain an open problem. Empirically, we observed representations retaining coherent structure at compression ratios far beyond what current theory predicts. We do not have a good explanation for this.
+
+## Related Work
+
+A preliminary report documenting the sparse attention resilience (SAR) observations from this repository has been submitted to arXiv:
+
+> Fontaine, Y., Bracht, S., Nakashima, T. (2024). *Anomalous Resilience in Sparse Attention Mechanisms: A Preliminary Report.* arXiv:2409.14821 [cs.LG]
 
 ## Status
 
